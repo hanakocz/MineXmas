@@ -1,5 +1,7 @@
 package com.hanakocz.minexmas;
 
+import com.hanakocz.minexmas.blocks.BlocksInit;
+
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -13,7 +15,7 @@ public class CommonProxy
 	
 	public void preInit(FMLPreInitializationEvent event)
 	{
-						
+		BlocksInit.init();				
 	}
 	
 	public void init(FMLInitializationEvent event)
